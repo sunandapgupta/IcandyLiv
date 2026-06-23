@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Your Name</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .portfolio-full { padding-bottom: 6rem; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">Your Name</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html" class="active">Portfolio</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+  </nav>
+
+  <div class="container page-header">
+    <span class="eyebrow">Works</span>
+    <h1>Portfolio</h1>
+    <p>Digital art, oil paintings, and textured works — built up slowly over time.</p>
+  </div>
+
+  <div class="container portfolio-full">
+
+    <!-- Filter tabs -->
+    <div class="filter-tabs">
+      <button class="filter-tab active" onclick="filterWork(this, 'all')">All</button>
+      <button class="filter-tab" onclick="filterWork(this, 'digital')">Digital</button>
+      <button class="filter-tab" onclick="filterWork(this, 'painting')">Painting</button>
+      <button class="filter-tab" onclick="filterWork(this, 'textured')">Textured</button>
+    </div>
+
+    <!-- Grid -->
+    <div class="portfolio-grid large" id="portfolio-grid">
+
+      <article class="art-card" data-type="digital">
+        <div class="art-thumb"><div class="color-block c1"></div></div>
+        <div class="art-info">
+          <span class="art-title">Untitled I</span>
+          <span class="art-medium">Digital · 2025</span>
+        </div>
+      </article>
+
+      <article class="art-card" data-type="painting">
+        <div class="art-thumb"><div class="color-block c2"></div></div>
+        <div class="art-info">
+          <span class="art-title">Dust Study</span>
+          <span class="art-medium">Oil on Canvas · 2025</span>
+        </div>
+      </article>
+
+      <article class="art-card" data-type="textured">
+        <div class="art-thumb"><div class="color-block c3"></div></div>
+        <div class="art-info">
+          <span class="art-title">Grain No. 4</span>
+          <span class="art-medium">Mixed Media · 2025</span>
+        </div>
+      </article>
+
+      <article class="art-card" data-type="digital">
+        <div class="art-thumb"><div class="color-block c4"></div></div>
+        <div class="art-info">
+          <span class="art-title">Green Field Study</span>
+          <span class="art-medium">Digital · 2024</span>
+        </div>
+      </article>
+
+      <article class="art-card" data-type="painting">
+        <div class="art-thumb"><div class="color-block c5"></div></div>
+        <div class="art-info">
+          <span class="art-title">Evening, Interior</span>
+          <span class="art-medium">Oil on Board · 2024</span>
+        </div>
+      </article>
+
+      <article class="art-card" data-type="textured">
+        <div class="art-thumb"><div class="color-block c6"></div></div>
+        <div class="art-info">
+          <span class="art-title">Gold Leaf Series I</span>
+          <span class="art-medium">Textured · 2024</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="footer-logo">Your Name</div>
+      <p class="footer-tagline">Digital art · Paintings · Textured works</p>
+      <div class="footer-inner">
+        <span class="copyright">© 2025 Your Name. All rights reserved.</span>
+        <ul class="footer-links">
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="mailto:you@email.com">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function filterWork(btn, type) {
+      document.querySelectorAll('.filter-tab').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      document.querySelectorAll('.art-card').forEach(card => {
+        card.style.display = (type === 'all' || card.dataset.type === type) ? '' : 'none';
+      });
+    }
+  </script>
+
+</body>
+</html>
