@@ -29,8 +29,10 @@
       <p>Mandalas, digital illustrations, and hand-painted works rooted in colour, pattern, and story. By Sunanda Gupta.</p>
       <a href="portfolio.html" class="btn btn-clay">See the work</a>
     </div>
-    <div class="hero-image" style="display:flex;align-items:center;justify-content:center;background:#0a1a0a;">
-      <img src="images/IMG_6797.jpg" alt="Mandala with Sanskrit verse by Sunanda Gupta" style="width:100%;height:100%;object-fit:contain;" />
+    <div class="hero-image" style="display:flex;align-items:center;justify-content:center;background:#f9f6f0;">
+      <div style="position:relative;width:100%;max-width:600px;aspect-ratio:1;">
+        <img src="images/IMG_6797.jpg" alt="Mandala with Sanskrit verse by Sunanda Gupta" oncontextmenu="return false;" draggable="false" style="width:100%;height:100%;object-fit:contain;display:block;pointer-events:none;" />
+      </div>
       <span class="art-label">Karmanye Vadhikaraste — Digital Mandala</span>
     </div>
   </section>
@@ -114,21 +116,21 @@
 
       <div class="blog-grid">
         <article class="blog-card">
-          <p class="blog-date">June 2026</p>
+          <p class="blog-date">June 2025</p>
           <h3>Why I keep coming back to the mandala</h3>
           <p>There is something about a circle that forces you to slow down. Here is what drawing mandalas has taught me about patience and precision.</p>
           <a href="blog/post-1.html" class="read-more">Read more</a>
         </article>
 
         <article class="blog-card">
-          <p class="blog-date">May 2026</p>
+          <p class="blog-date">May 2025</p>
           <h3>Colour as a language</h3>
           <p>I rarely plan my colour choices in advance. Most of the time, a piece tells me what it needs. This is how I learned to trust that instinct.</p>
           <a href="blog/post-2.html" class="read-more">Read more</a>
         </article>
 
         <article class="blog-card">
-          <p class="blog-date">April 2026</p>
+          <p class="blog-date">April 2025</p>
           <h3>From India to Oslo: how place shapes the work</h3>
           <p>Moving countries changes the way you see things. I did not expect it to change the way I paint, but it did — and mostly for the better.</p>
           <a href="blog/post-3.html" class="read-more">Read more</a>
@@ -143,7 +145,7 @@
       <div class="footer-logo">Icandy Liv'</div>
       <p class="footer-tagline">Digital art · Mandalas · Illustrated works · Oslo</p>
       <div class="footer-inner">
-        <span class="copyright">© 2026 Sunanda Gupta. All rights reserved.</span>
+        <span class="copyright">© 2025 Sunanda Gupta. All rights reserved.</span>
         <ul class="footer-links">
           <li><a href="https://www.instagram.com/icandyliv/" target="_blank" rel="noopener">Instagram</a></li>
           <li><a href="https://no.pinterest.com/guptasunanda19/" target="_blank" rel="noopener">Pinterest</a></li>
@@ -154,5 +156,6 @@
     </div>
   </footer>
 
+<script>document.querySelectorAll("img").forEach(img=>{img.addEventListener("contextmenu",e=>e.preventDefault());img.setAttribute("draggable","false");});</script>
 </body>
 </html>
