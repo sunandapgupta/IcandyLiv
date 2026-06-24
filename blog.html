@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blog — Icandy Liv</title>
+  <title>Blog — Icandy Liv'</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
   <style>
     .blog-full { padding-bottom: 6rem; }
-    .blog-list { display: flex; flex-direction: column; gap: 0; }
+    .blog-list { display: flex; flex-direction: column; }
     .blog-list-item {
       display: grid;
       grid-template-columns: 140px 1fr;
@@ -19,29 +19,17 @@
       border-bottom: 1px solid var(--dust);
       align-items: baseline;
     }
-    .blog-list-item .date {
-      font-size: 0.75rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      opacity: 0.4;
-      padding-top: 0.3rem;
-    }
-    .blog-list-item h2 {
-      font-size: clamp(1.4rem, 2.5vw, 2rem);
-      margin-bottom: 0.5rem;
-      transition: color 0.2s;
-    }
+    .blog-list-item .date { font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; opacity:0.4; padding-top:0.3rem; }
+    .blog-list-item h2 { font-size: clamp(1.4rem, 2.5vw, 2rem); margin-bottom:0.5rem; transition: color 0.2s; }
     .blog-list-item:hover h2 { color: var(--clay); }
-    .blog-list-item p { opacity: 0.6; font-size: 0.95rem; margin-bottom: 1rem; }
-    @media (max-width: 600px) {
-      .blog-list-item { grid-template-columns: 1fr; gap: 0.25rem; }
-    }
+    .blog-list-item p { opacity:0.6; font-size:0.95rem; margin-bottom:1rem; }
+    @media (max-width:600px) { .blog-list-item { grid-template-columns:1fr; gap:0.25rem; } }
   </style>
 </head>
 <body>
 
   <nav>
-    <a href="index.html" class="nav-logo">Icandy Liv</a>
+    <a href="index.html" class="nav-logo">Icandy Liv'</a>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="portfolio.html">Portfolio</a></li>
@@ -52,7 +40,7 @@
   <div class="container page-header">
     <span class="eyebrow">Writing</span>
     <h1>Blog</h1>
-    <p>Notes on process, materials, and what I'm thinking about while making things.</p>
+    <p>Thoughts on making art, working with colour, and what happens between the ideas.</p>
   </div>
 
   <div class="container blog-full">
@@ -62,8 +50,8 @@
         <div class="blog-list-item">
           <span class="date">June 2025</span>
           <div>
-            <h2>How I build texture into digital work</h2>
-            <p>Layering noise, grain overlays, and hand-painted textures to get something that feels tangible.</p>
+            <h2>Why I keep coming back to the mandala</h2>
+            <p>There is something about a circle that forces you to slow down. Here is what drawing mandalas has taught me about patience and precision.</p>
             <span class="read-more">Read more</span>
           </div>
         </div>
@@ -73,8 +61,8 @@
         <div class="blog-list-item">
           <span class="date">May 2025</span>
           <div>
-            <h2>On painting slowly</h2>
-            <p>Why I stopped rushing finished pieces and what happened to the work when I did.</p>
+            <h2>Colour as a language</h2>
+            <p>I rarely plan my colour choices in advance. Most of the time, a piece tells me what it needs. This is how I learned to trust that instinct.</p>
             <span class="read-more">Read more</span>
           </div>
         </div>
@@ -84,8 +72,8 @@
         <div class="blog-list-item">
           <span class="date">April 2025</span>
           <div>
-            <h2>Palette notes: earth tones</h2>
-            <p>A look at the pigments and hex values I keep returning to — and why they feel honest.</p>
+            <h2>From India to Oslo: how place shapes the work</h2>
+            <p>Moving countries changes the way you see things. I did not expect it to change the way I paint, but it did — and mostly for the better.</p>
             <span class="read-more">Read more</span>
           </div>
         </div>
@@ -96,13 +84,14 @@
 
   <footer>
     <div class="container">
-      <div class="footer-logo">Icandy Liv</div>
-      <p class="footer-tagline">Digital art · Paintings · Textured works</p>
+      <div class="footer-logo">Icandy Liv'</div>
+      <p class="footer-tagline">Digital art · Mandalas · Illustrated works · Oslo</p>
       <div class="footer-inner">
-        <span class="copyright">© 2025 Icandy Liv. All rights reserved.</span>
+        <span class="copyright">© 2025 Sunanda Gupta. All rights reserved.</span>
         <ul class="footer-links">
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="blog.html">Blog</a></li>
+          <li><a href="https://www.instagram.com/icandyliv/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://no.pinterest.com/guptasunanda19/" target="_blank" rel="noopener">Pinterest</a></li>
+          <li><a href="https://www.facebook.com/icandyliv/" target="_blank" rel="noopener">Facebook</a></li>
           <li><a href="mailto:icandyliv@gmail.com">Contact</a></li>
         </ul>
       </div>
