@@ -105,6 +105,7 @@ nav {
   display: flex;
   gap: var(--space-md);
   list-style: none;
+  padding: 0.5rem 0;
 }
 
 .nav-links a {
@@ -131,7 +132,7 @@ nav {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: var(--space-lg);
-  padding-top: 80px;
+  padding-top: 130px;
 }
 
 .hero-text { padding: var(--space-lg) 0; }
@@ -418,7 +419,7 @@ footer {
    PAGE HEADER (portfolio/blog pages)
    ========================================= */
 .page-header {
-  padding-top: calc(80px + var(--space-lg));
+  padding-top: calc(130px + var(--space-lg));
   padding-bottom: var(--space-lg);
   border-bottom: 1px solid var(--dust);
   margin-bottom: var(--space-lg);
@@ -471,7 +472,7 @@ footer {
 .blog-post {
   max-width: 680px;
   margin: 0 auto;
-  padding-top: calc(80px + var(--space-lg));
+  padding-top: calc(130px + var(--space-lg));
   padding-bottom: var(--space-xl);
 }
 
